@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <div class="flex-box">
+        <div class='main-container'>
+
+            <div class='cabecalho'>
+                <h1 class='titulo'>               
+                    Pesquisa
+                </h1>
+    
+                <h5 class="subtitulo">
+                    Obrigado pelo tempo que você reservou para responder este formulário!
+                </h5>
+            </div>
+    
+            <div class='conteudo'>
+    
+                <form>
+                    <div class='form-nome'>
+                        <p>Nome</p>
+                        <input type='text' name='nome' id='nome' required=''>
+                    </div>
+    
+                    <div class='form-email'>
+                        <p>Email</p>
+                        <input type='email' name='email' id='email' required=''>
+                    </div>
+    
+                    <div class='form-idade'>
+                        <p>Idade <span> (opcional)</span></p>
+                        <input type='number' name='idade' id='idade'>
+                    </div>
+    
+                    <div class='form-ocupacao'>
+                        <p>Qual opção descreve melhor a sua ocupação atual?</p>
+                        <select id='ocupacao' name='ocupacao' required='' class='ocupacao'>
+                            <option disabled='' selected='' value=''>Escolha uma opção</option>
+                            <option value='estudante'>Estudante</option>
+                            <option value='trabalhador'>Trabalhador</option>
+                            <option value='outro'>Outro</option>
+                            <option value='naoDizer'>Prefiro não dizer</option>
+                        </select>
+                    </div>
+    
+                    <div class='form-recomendacao'>
+                        <p>Você recomendaria os nossos serviços para um amigo?</p>
+    
+                        <div class='radio'>
+                            <input type='radio' name='recomendacao' id='sim' value='Sim' checked=''>
+                            <label>Sim</label>
+                        </div>
+    
+                        <div class='radio'>
+                            <input type='radio' name='recomendacao' id='talvez' value='Talvez'>
+                            <label>Talvez</label>
+                        </div class='radio'>
+    
+                        <div>
+                            <input type='radio' name='recomendacao' id='nao' value='Não'>
+                            <label>Não</label>
+                        </div>
+                    </div>
+    
+                    <div class='form-aprimoracao'>
+                        <p>Em que você mais gostaria de se aprimorar?</p>
+    
+                        <div class='checkbox'>
+                            <label>
+                                <input type='checkbox' name='front-end' id='front-end'>
+                                Front-End
+                            </label>
+                        </div>
+    
+                        <div class='checkbox'>
+                            <label>
+                                <input type='checkbox' name='back-end' id='back-end'>
+                                Back-End
+                            </label>
+                        </div>
+    
+                        <div class='checkbox'>
+                            <label>
+                                <input type='checkbox' name='banco' id='banco'>
+                                Banco de Dados
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class='form-sugestao'>
+                        <p>Algum comentário ou sugestão?</p>
+                        <textarea name='sugestao' id='sugestao' placeholder="Digite sua sugestão aqui..."></textarea>
+                    </div>
+    
+                    <div class='form-button'>
+                        <input type='submit' value='Enviar' class='botao-enviar'>
+                    </div>
+                </form>
+    
+            </div>
+    
+            <div class='rodape'>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
